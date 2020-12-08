@@ -6,8 +6,11 @@ const PaintCan = function(amountLitres, isEmpty=false){
 PaintCan.prototype.checkEmpty = function (){
     if (this.amountLitres === 0){
         this.isEmpty = true;
-    }
-        
+    }   
+}
+
+PaintCan.prototype.emptyCan = function (){
+    this.amountLitres = 0;     
 }
 
 module.exports = PaintCan;

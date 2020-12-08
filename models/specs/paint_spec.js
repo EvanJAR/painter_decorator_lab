@@ -24,6 +24,10 @@ describe("PaintCan", function(){
         assert.strictEqual(actual2, true);
     })
 
-
+    it("should be able to empty itself", function(){
+        red.emptyCan();
+        const actual = red.amountLitres;
+        assert.strictEqual(actual, 0)
+    });
 
 });
